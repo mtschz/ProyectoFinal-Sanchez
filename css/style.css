@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+:root {
+    /* light mode */
+    --text: #020204;
+    --background: #f0eff6;
+    --card: white;
+    --primary-button: #460143;
+    --primary-button-border: #30032d;
+    --primary-button-hover: #8b0d85;
+    --secondary-button: #f5f4fa;
+    --accent: #46027e; 
+    --border: #bbbbbb; 
+    --text-font: 'Playfair Display', serif;
+}
+.dark-theme {
+      /* dark mode */
+  --text: #cfcdfe;
+  --background: #11101b;
+  --card: #1c1b35;
+  --primary-button: #46027e;
+  --secondary-button: #460143;
+  --accent: #190018;
+  --border: #404046;
+}
+body {
+  background-color: var(--background) !important;
+}
+.navbar {
+    border-bottom: 1px solid var(--border)!important;
+    background: var(--background) !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--text)
+}
+.logo {
+  display: block;
+  max-height: 100%;
+}
+aside {
+    height: 80%;
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+td {
+  background-color: var(--background);
+  color:var(--text);
+}
+thead{
+  background-color: var(--background);
+  color:var(--text);
+}
+a{
+  color: var(--text) !important;
+}
+.sidebar-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  .filter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+.inputPrecio {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .filter-button {
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .filter-button:hover {
+    background-color: var(--primary-button-hover) !important;
+  }
+.logo {
+    display: block;
+    max-width:100%;
+}
+.inputCantidad {
+  width: 4em;
+}
+.td {
+  display: flex;
+  justify-content: space-between;
+}
+.catalogo {
+    grid-area: catalogo;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navbar-brand {
+font-family: var(--text-font);
+}
+.card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--card);
+    padding:0;
+}
+.card-img {
+    width: 100%;
+    object-fit: fill;
+    height: auto;
+    display: block;
+    margin:0;
+}
+.btn {
+    background-color:   var(--primary-button);
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    
+  }
+.btn:hover {
+  background-color:   var(--primary-button-hover);
+}
+  .card-title {
+    color:var(--text);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .precio {
+    color:var(--text);
+    font-size: 16px;
+    font-weight: bold;
+  }
